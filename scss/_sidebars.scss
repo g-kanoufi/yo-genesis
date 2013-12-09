@@ -1,0 +1,30 @@
+.sidebar {
+
+	a {
+
+	}
+
+	p:last-child {
+		margin: 0;
+	}
+
+	li {
+		@include word-break(break-word);
+		overflow: hidden;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.widget {
+		overflow: hidden;
+	}
+
+	.widgettitle {
+
+		a {
+
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.footer-widgets {
+	@extend %clearfix;
+
+	a {
+
+		&:hover,
+		&:focus,
+		&:active {
+
+		}
+	}
+
+	.widget {
+
+	}
+
+	.widgettitle {
+
+	}
+
+	li {
+		@include word-break(break-word);
+		overflow: hidden;
+	}
+}
+
+.site-footer {
+
+	a {
+
+	}
+}

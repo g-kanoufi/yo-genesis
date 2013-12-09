@@ -1,0 +1,45 @@
+/*********************
+SIZES
+*********************/
+// $siteWidth:		60em; // Useful for fixed width sites, as well as for limiting the max-width of fluid sites
+
+@mixin breakpoint($point) {
+  @if $point == full {
+    @media (min-width: 55em) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 55em) { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width: 45em)  { @content; }
+  }
+}
+
+/*********************
+COLORS
+*********************/
+
+/*********************
+SOCIAL COLORS - http://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+*********************/
+$twitter:			#00aced;
+$facebook: 			#3b5998;
+$linkedin:			#007bb6;
+$google:			#dd4b39;
+$youtube:			#bb0000;
+$pinterest: 		#cb2027;
+$tumblr:			#32506d;
+$flickr:			#ff0084;
+$instagram:			#517fa4;
+$vimeo:				#aad450;
+$foursquare: 		#0072b1;
+
+/*********************
+SPRITES
+*********************/
+
+/*********************
+TYPOGRAPHY - http://cssfontstack.com/
+*********************/
+// 'Better Helvetica' via http://css-tricks.com/snippets/css/better-helvetica/
+$sans:				"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
