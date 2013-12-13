@@ -1,53 +1,107 @@
 // http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
 
-.five-sixths,
-.four-sixths,
-.one-fourth,
-.one-half,
-.one-sixth,
-.one-third,
-.three-fourths,
-.three-sixths,
-.two-fourths,
-.two-sixths,
-.two-thirds {
-	float: left;
-	margin-left: 2.564102564102564%;
+//Griddle + inuit.css Grid System
+.grid{
+    margin-left:-$base-spacing-unit;
+    list-style:none;
+    margin-bottom:0;
 }
 
-.one-half,
-.three-sixths,
-.two-fourths {
-	width: 48.717948717948715%;
+
+/**
+ * Very infrequently occuring grid wrappers as children of grid wrappers.
+ */
+.grid > .grid{
+    margin-left:0;
 }
 
-.one-third,
-.two-sixths {
-	width: 31.623931623931625%;
+
+/**
+ * Grid
+ */
+.grid__item{
+    display:inline-block;
+    width:100%;
+    padding-left:$base-spacing-unit;
+    vertical-align:top;
 }
 
-.four-sixths,
-.two-thirds {
-	width: 65.81196581196582%;
-}
 
-.one-fourth {
-	width: 23.076923076923077%;
-}
 
-.three-fourths {
-	width: 74.35897435897436%;
-}
+.one-half          { width:50%; }
 
-.one-sixth {
-	width: 14.52991452991453%;
-}
 
-.five-sixths {
-	width: 82.90598290598291%;
-}
+/**
+* Thirds
+*/
+.one-third         { width:33.333%; }
+.two-thirds        { width:66.666%; }
 
-.first {
-	clear: both;
-	margin-left: 0;
-}
+
+/**
+* Quarters
+*/
+.one-quarter       { width:25%; }
+.two-quarters      { @extend .one-half; }
+.three-quarters    { width:75%; }
+
+
+/**
+* Fifths
+*/
+.one-fifth         { width:20%; }
+.two-fifths        { width:40%; }
+.three-fifths      { width:60%; }
+.four-fifths       { width:80%; }
+
+
+/**
+* Sixths
+*/
+.one-sixth         { width:16.666%; }
+.two-sixths        { @extend .one-third; }
+.three-sixths      { @extend .one-half; }
+.four-sixths       { @extend .two-thirds; }
+.five-sixths       { width:83.333%; }
+
+
+/**
+* Eighths
+*/
+.one-eighth        { width:12.5%; }
+.two-eighths       { @extend .one-quarter; }
+.three-eighths     { width:37.5%; }
+.four-eighths      { @extend .one-half; }
+.five-eighths      { width:62.5%; }
+.six-eighths       { @extend .three-quarters; }
+.seven-eighths     { width:87.5%; }
+
+
+/**
+* Tenths
+*/
+.one-tenth         { width:10%; }
+.two-tenths        { @extend .one-fifth; }
+.three-tenths      { width:30%; }
+.four-tenths       { @extend .two-fifths; }
+.five-tenths       { @extend .one-half; }
+.six-tenths        { @extend .three-fifths; }
+.seven-tenths      { width:70%; }
+.eight-tenths      { @extend .four-fifths; }
+.nine-tenths       { width:90%; }
+
+
+/**
+* Twelfths
+*/
+.one-twelfth       { width:8.333%; }
+.two-twelfths      { @extend .one-sixth; }
+.three-twelfths    { @extend .one-quarter; }
+.four-twelfths     { @extend .one-third; }
+.five-twelfths     { width:41.666% }
+.six-twelfths      { @extend .one-half; }
+.seven-twelfths    { width:58.333%; }
+.eight-twelfths    { @extend .two-thirds; }
+.nine-twelfths     { @extend .three-quarters; }
+.ten-twelfths      { @extend .five-sixths; }
+.eleven-twelfths   { width:91.666%; }

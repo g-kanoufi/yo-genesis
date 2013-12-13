@@ -3,10 +3,12 @@
 @import "sass-flex-mixin/flex.scss";
 @import "variables";
 
-// Normalize, Clearfix, & Toolkit
-@import "normalize.scss/_normalize.scss";
+// Normalize, Clearfix, & Mixins & Toolkit
+@import "../bower_components/normalize.scss/_normalize.scss";
 @import "clearfix";
+@import "mixins";
 @import "toolkit";
+
 
 // Universal Box-Sizing
 *,
@@ -21,7 +23,7 @@
 @import "type";
 @import "headings";
 @import "objects-and-images";
-@import "forms";
+@import "../bower_components/formalize/assets/css/_formalize.scss";
 
 // Module Styles
 @import "header";
@@ -31,10 +33,19 @@
 @import "sidebars";
 @import "footer";
 
+//Pluses: Fontawesome, Flexslider, etc...
+//@import "../bower_components/Font-Awesome/scss/font-awesome.scss";
+//@import "../bower_components/fancybox-bower/source/jquery.fancybox.scss";
+//@import "../bower_components/flexslider-compass/flexslider.scss";
+
+
+
 // Templates
+
+
+
+
+
 
 // Print
 @import "print";
-
-// Shame - For new style snippets that haven't been sorted and commented yet
-@import "shame";

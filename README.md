@@ -1,9 +1,18 @@
-Bones for Genesis 2.0
+Yo-Genesis - Genesis Child Themes Starter for Yeopress
 ==============
 
-My fork of [eddiemachado's](https://github.com/eddiemachado/bones-genesis) Bones for Genesis. Built for Genesis 2.0+ and WordPress 3.5+.
+Based on Bones for Genesis
 
-A starting point for new Genesis projects. This is a starter child theme, not a dependency. Clone it. Fork it. Hack it for your own projects. Build cool things on the web.
+A starting point for new Genesis projects ready for [Wesley Todd Yeopress](https://github.com/wesleytodd/YeoPress). Use it, hack it or whatever you want.
+
+All below is fron Bones for Genesis form [cdukes](https://github.com/cdukes/bones-for-genesis-2-0).
+
+Added normalize downloaded by Bower, _form updated with incredible .scss file of [natahnsmith](https://github.com/nathansmith/formalize/tree/master/assets)'s formalize.
+
+Use with Yeopress, or just cd to this theme directory, then `npm install` to install dependencies, then just do `grunt`, and that's it, ready to go, concatenation and compression of .scss and js files.
+
+
+--
 
 *Issues and pull requests are welcome and will be addressed.*
 
@@ -21,7 +30,7 @@ A starting point for new Genesis projects. This is a starter child theme, not a 
 - Remove Genesis 'Layout Settings' meta boxes (template, disabled by default)
 
 ## JavaScript
-- CodeKit-ready
+
 - Submodules for [FitVids.js](http://fitvidsjs.com/) & [iOS orientationchange zoom bug](https://github.com/scottjehl/iOS-Orientationchange-Fix)
 - 'no-js' `<body>` class for easy JS detection
 
@@ -111,6 +120,16 @@ A starting point for new Genesis projects. This is a starter child theme, not a 
 **Reminder**: Run `git submodule foreach git pull origin master` on your repo to update all submodules before beginning a new project.
 
 ## Changelog
+
+### 2.0.19(December 13, 2013)
+- Added function to add addons to the navigation as social icons or feed, etc...
+- Normalize.scss, downloaded from bower as Flexslider, Font-Awesome, FancyBox, jQuery Easing
+- Changed _form.scss code with formalize framework code
+- Changed the grid system for the Griddle base grid used in inuit.css
+- Added a _mixins.scss partial and many new variable in _variables.scss
+- styles.scss ready for bower install of font-awesome, flexslider and fancybox
+
+
 ### 2.0.18 (November 20, 2013)
 - Added a template to deregister the default Genesis menus, and add your own (deactivated by default)
 - Added [flexbox mixins](https://github.com/mastastealth/sass-flex-mixin), pending proper Compass support

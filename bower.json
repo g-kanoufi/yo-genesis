@@ -1,0 +1,15 @@
+{
+  "name": "YoDebut",
+  "version": "0.0.1",
+  "dependencies": {
+    "inuit.css": "~5.0",
+    "requirejs": "~2.1.8",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "flexslider": "~2.2.0",
+    "fancybox": "~2.1.5",
+    "jquery.easing": "~1.3",
+    "formValidate": "~0.9.0"
+  },
+  "devDependencies": {}
+}
