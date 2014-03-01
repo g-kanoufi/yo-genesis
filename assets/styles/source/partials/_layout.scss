@@ -1,0 +1,99 @@
+html{
+    font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
+    overflow-y:scroll;
+    height:100%;
+}
+
+body{
+	min-height:100%;
+}
+
+
+.wrap {
+	@extend %wrap;
+	position:relative;
+
+}
+
+.site-container{
+
+}
+
+.site-inner {
+	@extend %wrap;
+	@extend %clearfix;
+
+}
+
+.content-sidebar-wrap{
+
+	.content, aside{
+
+	}
+
+	.content{
+
+	}
+
+	aside{
+
+	}
+}
+
+.content-sidebar-sidebar,
+.sidebar-content-sidebar,
+.sidebar-sidebar-content {
+
+	.content-sidebar-wrap {
+
+	}
+
+	.content {
+
+	}
+}
+
+.content-sidebar-sidebar {
+
+	.content-sidebar-wrap {
+
+	}
+}
+
+.sidebar-content-sidebar,
+.sidebar-sidebar-content {
+
+	.content-sidebar-wrap {
+
+	}
+}
+
+.content-sidebar .content,
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content {
+
+}
+
+
+.sidebar-primary {
+
+}
+
+.sidebar-content,
+.sidebar-sidebar-content {
+
+	.sidebar-primary{
+
+	}
+}
+
+.sidebar-secondary {
+
+}
+
+.content-sidebar-sidebar {
+
+	.sidebar-secondary {
+
+	}
+}

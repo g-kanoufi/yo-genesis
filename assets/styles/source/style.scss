@@ -1,0 +1,44 @@
+/*!
+Theme Name: Yo-Genesis Child Theme Starter
+Theme URI: https://github.com/g-kanoufi/yo-genesis
+Description: WordPress Starter Theme for use as Child Theme of the Genesis Framework for building custom themes - Bower and Gulp ready.
+Author: Guillaume Kanoufi
+Author URI: http://lostwebdesigns.com
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 2.0.2
+
+Template: genesis
+*/
+@import "partials/variables";
+
+// Inuitcss
+@import "../../../bower_components/inuitcss/inuit";
+
+// Fontawesome
+@import "../../bower_components/font-awesome/scss/font-awesome";
+// @import "../../../bower_components/flexslider-compass/flexslider.scss";
+
+// Toolkit
+@import "partials/toolkit";
+
+// Sitewide Styles
+@import "partials/layout";
+@import "partials/type";
+@import "partials/headings";
+@import "partials/objects-and-images";
+
+// Module Styles
+@import "partials/header";
+@import "partials/flexslider";
+@import "partials/pretty-photo";
+@import "partials/navigation";
+@import "partials/content";
+@import "partials/forms";
+@import "partials/comments";
+@import "partials/sidebars";
+@import "partials/footer";
+@import "partials/lost";
+
+// Print
+@import "partials/print";

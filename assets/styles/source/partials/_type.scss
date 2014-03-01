@@ -1,0 +1,56 @@
+html,
+body {
+
+	text-rendering:  optimizeLegibility ;// Use with caution. May break certain @font-face fonts.
+
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button {
+	transition:all 0.1s ease-in-out;
+}
+
+::-moz-selection {
+	// text-shadow: none
+}
+
+::selection {
+	// text-shadow: none
+}
+
+a {
+
+	&:hover,
+	&:focus,
+	&:active {
+
+	}
+}
+
+ol,
+ul,
+p {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+strong {
+	font-weight: 700;
+}
+
+pre {
+	overflow: scroll;
+	white-space: pre;
+}
+
+code {
+	word-break:break-word;
+	overflow: hidden;
+}

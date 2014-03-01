@@ -1,0 +1,36 @@
+.lost-footer{
+ 	padding: 2px 4px;
+	background: rgba(255,255,255,.9);
+	position: fixed;
+	z-index:5;
+	bottom: 0;
+	right: 0;
+	transition: .5s all ease-in-out;
+	@include font-size(10px);
+
+	a{
+		text-decoration:none;
+		color:$brand-color;
+
+		&:hover{
+			color:#444;
+
+			.lozt{
+				fill:#444;
+			}
+		}
+	}
+
+	#logo_lost{
+		max-width: 25px;
+		max-height: 25px;
+		margin-bottom: -7px;
+	}
+	.lozt{
+		fill:$brand-color;
+	}
+
+	&.below{
+		transform: translate(100% , 100%);
+	}
+ }

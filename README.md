@@ -1,26 +1,28 @@
-Yo-Genesis - Genesis Child Themes Starter for Yeopress
+Yo-Genesis - Genesis Child Themes Starter - Gulp and Bower flavored - Ready for Yeopress
 ==============
 
-Based on Bones for Genesis
+Based on a mix of Bones for Genesis and [Matt Banks](https://github.com/mattbanks/Genesis-Starter-Child-Theme/tree/gulp) child theme starter for Genesis
 
 A starting point for new Genesis projects ready for [Wesley Todd Yeopress](https://github.com/wesleytodd/YeoPress). Use it, hack it or whatever you want.
 
 All below is fron Bones for Genesis form [cdukes](https://github.com/cdukes/bones-for-genesis-2-0).
 
-Added normalize downloaded by Bower, _form updated with incredible .scss file of [natahnsmith](https://github.com/nathansmith/formalize/tree/master/assets)'s formalize.
-
-Use with Yeopress, or just cd to this theme directory, then `npm install` to install dependencies, then just do `grunt`, and that's it, ready to go, concatenation and compression of .scss and js files.
+Use with Yeopress, or just cd to this theme directory, then `npm install` to install dependencies, then just do `gulp`, and that's it, ready to go, concatenation and compression of .scss and js files.
 
 
 --
 
 *Issues and pull requests are welcome and will be addressed.*
 
-*All functions are prefixed with `yfg`. Do a find-and-replace to align the these function names to your project's prefix.'*
+*All functions are prefixed with `yg_`. Do a find-and-replace to align the these function names to your project's prefix.'*
 
 ## Developer Tools (disabled by default)
 - Display database query info in your footer
 - Put the site in maintenance mode for non-admins
+
+## Recommended Plugins
+- Yoast SEO ,the magnificent
+- Yoast google analytics
 
 ## Genesis Customizations
 - Enable Genesis 2.0 HTML5 support
@@ -30,15 +32,13 @@ Use with Yeopress, or just cd to this theme directory, then `npm install` to ins
 - Remove Genesis 'Layout Settings' meta boxes (template, disabled by default)
 
 ## JavaScript
-
-- Submodules for [FitVids.js](http://fitvidsjs.com/) & [iOS orientationchange zoom bug](https://github.com/scottjehl/iOS-Orientationchange-Fix)
+- Submodules for [prettyPhoto](https://github.com/scaron/prettyphoto) &[svgeezy.js](https://github.com/benhowdle89/svgeezy)
 - 'no-js' `<body>` class for easy JS detection
 
 ## CSS
+- Packed with Inuitcss
 - SASS-ready, CodeKit-ready
 - Includes a starter config.rb file for Compass
-- Submodule for normalize.scss
-- Includes Genesis 2.0 clearfix
 - `%clearfix` and `%image-replacement` SASS `@extend`'s
 - Unstyled, nested selections following Genesis 2.0's style.css as a template
 - A skeleton of helpful attribute resets and suggestions
@@ -49,10 +49,9 @@ Use with Yeopress, or just cd to this theme directory, then `npm install` to ins
 - Template for serving better favicons to iOS and modern browsers
 - Enqueue custom stylesheets
 - Supports an IE-only stylesheet
-- Support the IE6 Universal Stylesheet
 - Supports enqueuing Google Fonts (template, disabled by default)
 - Enqueue jQuery from Google's CDN
-- Enqueue custom scripts
+- Enqueue custom amin script with plugins build-in with gulp
 - Specify custom favicon location (template, disabled by default)
 - Add a 'no-js' class to `<body>`
 
@@ -75,6 +74,9 @@ Use with Yeopress, or just cd to this theme directory, then `npm install` to ins
 
 ### Page Templates
 - Force layout option for template (template, disabled by default)
+
+### Gravity Form
+- Gravity forms base class inside the _form partial
 
 ## Admin Customizations
 ### Functionality
@@ -107,12 +109,10 @@ Use with Yeopress, or just cd to this theme directory, then `npm install` to ins
 ### Options
 - Disable some or all of the default Genesis theme option meta boxes (template, some disabled by default)
 
-## To Dos
-- Add admin-options.php support for setting Genesis default options
-- Add admin-options.php Genesis theme options framework
-- Better SASS organization into partials, modules, etc.
-- Conditional jQuery 2.0 enqueueing
-- *(Ongoing)* More standard developer comments & better function formatting
+### Plugins
+- Unregistered superfish as added in the main.js file (less http requests)
+- Yoast SEO metabox  priority
+- Gravity form autoscrolling disabled
 
 ## Further Resources
 - [Genesis Explained](http://designsbynickthegeek.com/tutorials/genesis-explained-two_)
@@ -120,6 +120,12 @@ Use with Yeopress, or just cd to this theme directory, then `npm install` to ins
 **Reminder**: Run `git submodule foreach git pull origin master` on your repo to update all submodules before beginning a new project.
 
 ## Changelog
+
+### 2.0.2(March 1, 2014)
+- Changed Gruntfile.js for Gulp
+- Added bower_components copy to the assets folder
+- Added gulp-include to add needed jQuery plugins insde the main.js file
+- Added gulp-svgmin for svg optimisation
 
 ### 2.0.19(December 13, 2013)
 - Added function to add addons to the navigation as social icons or feed, etc...

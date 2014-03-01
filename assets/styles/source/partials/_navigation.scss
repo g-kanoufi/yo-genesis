@@ -1,0 +1,72 @@
+.nav-primary{
+	.wrap{
+	}
+}
+
+.genesis-nav-menu {
+
+	.menu-item {
+
+
+		&:hover,
+		&:focus,
+		&:active,
+		&.sfHover {
+
+			> .sub-menu {
+				left: auto;
+				opacity: 1;
+			}
+		}
+	}
+
+
+	a:hover,
+	a:focus,
+	a:active,
+	.current-menu-item > a,
+	.sub-menu .current-menu-item > a:hover {
+
+	}
+
+	.sub-menu .current-menu-item > a {
+
+	}
+
+	> .menu-item > a {
+
+	}
+
+	.sub-menu {
+		opacity:0;
+		transition:opacity .4s ease-in-out;
+		position: absolute;
+		top: 100%;
+		left: -9999px;
+		z-index: 99;
+		margin: 0;
+		padding: 0;
+
+		a {
+			position: relative;
+		}
+
+		.sub-menu {
+
+		}
+	}
+
+	> .first {
+
+		> a {
+
+		}
+	}
+
+	> .last {
+
+		> a {
+
+		}
+	}
+}
