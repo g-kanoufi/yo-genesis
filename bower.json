@@ -2,8 +2,8 @@
   "name": "yo-genesis-starter-childtheme",
   "private": true,
   "dependencies": {
-    "inuitcss": "~5.0.0"
-    "animate.scss": "",,
+    "inuitcss": "~5.0.0",
+    "animate.scss": "",
     "font-awesome": "~4.0.3",
     "jquery-prettyPhoto": "",
     "svgeezy": "",
