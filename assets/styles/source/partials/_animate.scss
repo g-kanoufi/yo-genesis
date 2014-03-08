@@ -1,8 +1,7 @@
 // Vendor Helpers
 // ==============
 
-// List of support vendor prefixes.
-$vendors: "-webkit-" "-moz-" "-o-" "";
+
 
 @mixin vendorize($property, $values...) {
   @each $vendor in $vendors {
@@ -11,31 +10,31 @@ $vendors: "-webkit-" "-moz-" "-o-" "";
 }
 
 @mixin animation-duration($arguments...) {
-  @include vendorize(animation-duration, $arguments);
+  animation-duration: $arguments);
 }
 
 @mixin animation-fill-mode($arguments...) {
-  @include vendorize(animation-fill-mode, $arguments);
+  animation-fill-mode: $arguments);
 }
 
 @mixin animation-name($arguments...) {
-  @include vendorize(animation-name, $arguments);
+  animation-name: $arguments);
 }
 
 @mixin animation-timing-function($arguments...) {
-  @include vendorize(animation-timing-function, $arguments);
+  animation-timing-function: $arguments);
 }
 
 @mixin transform-origin($arguments...) {
-  @include vendorize(transform-origin, $arguments);
+  transform-origin: $arguments);
 }
 
 @mixin transform-style($arguments...) {
-  @include vendorize(transform-style, $arguments);
+  transform-style: $arguments);
 }
 
 @mixin backface-visibility($arguments...) {
-  @include vendorize(backface-visibility, $arguments);
+  backface-visibility: $arguments);
 }
 
 // General
