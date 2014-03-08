@@ -1,40 +1,29 @@
-// Vendor Helpers
-// ==============
-
-
-
-@mixin vendorize($property, $values...) {
-  @each $vendor in $vendors {
-    #{$vendor}#{$property}: $values;
-  }
-}
-
 @mixin animation-duration($arguments...) {
-  animation-duration: $arguments);
+  animation-duration: $arguments;
 }
 
 @mixin animation-fill-mode($arguments...) {
-  animation-fill-mode: $arguments);
+  animation-fill-mode: $arguments;
 }
 
 @mixin animation-name($arguments...) {
-  animation-name: $arguments);
+  animation-name: $arguments;
 }
 
 @mixin animation-timing-function($arguments...) {
-  animation-timing-function: $arguments);
+  animation-timing-function: $arguments;
 }
 
 @mixin transform-origin($arguments...) {
-  transform-origin: $arguments);
+  transform-origin: $arguments;
 }
 
 @mixin transform-style($arguments...) {
-  transform-style: $arguments);
+  transform-style: $arguments;
 }
 
 @mixin backface-visibility($arguments...) {
-  backface-visibility: $arguments);
+  backface-visibility: $arguments;
 }
 
 // General
