@@ -19,6 +19,9 @@
     "inuitcss": {
       "ignore": true
     },
+    "animate.scss": {
+      "ignore": true
+    },
     "font-awesome":{
     	"fonts": "fonts/*",
     	"main": "scss/**"
