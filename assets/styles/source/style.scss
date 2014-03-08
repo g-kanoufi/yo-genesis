@@ -15,6 +15,8 @@ Template: genesis
 // Inuitcss
 @import "../../../bower_components/inuitcss/inuit";
 
+
+
 // Fontawesome
 @import "../../bower_components/font-awesome/scss/font-awesome";
 // @import "../../../bower_components/flexslider-compass/flexslider.scss";
@@ -39,6 +41,9 @@ Template: genesis
 @import "partials/sidebars";
 @import "partials/footer";
 @import "partials/lost";
+
+//Animate.css
+@import "partials/animate";
 
 // Print
 @import "partials/print";
