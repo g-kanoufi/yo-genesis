@@ -14,19 +14,12 @@ function yg_register_required_plugins() {
 			'force_activation'	=> true
 		),
 
-		// array(
-		// 	'name' 				=> 'Use Google Libraries',
-		// 	'slug' 				=> 'use-google-libraries',
-		// 	'required' 			=> true,
-		// 	'force_activation'	=> true
-		// ),
-
-		// array(
-		// 	'name' 				=> 'Pods - Custom Content Types and Fields',
-		// 	'slug' 				=> 'pods',
-		// 	'required' 			=> true,
-		// 	'force_activation'	=> true
-		// ),
+		array(
+			'name' 				=> 'Super Custom Post Types',
+			'slug' 				=> 'super-cpt',
+			'required' 			=> true,
+			'force_activation'	=> true
+		),
 
 		array(
 			'name' 				=> 'Google Analytics for WordPress',
